@@ -30,7 +30,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Client-id base
-PRODUCT_GMS_CLIENTID_BASE := android-samsung
+PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
 
 # Build fingerprint
 BUILD_FINGERPRINT := "samsung/a51nsxx/a51:13/TP1A.220624.014/A515FXXU5GVK6:user/release-keys"
