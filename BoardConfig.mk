@@ -40,6 +40,10 @@ BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 71106560
 BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
 
+## Vintf
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/configs/vintf/device_framework_matrix.xml
+
 ## Filesystem config
 include device/samsung/universal9611-common/fsconfig_dynamic.mk
 
