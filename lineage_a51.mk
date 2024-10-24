@@ -35,7 +35,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
 # Build fingerprint
 BUILD_FINGERPRINT := "samsung/a51nsxx/a51:13/TP1A.220624.014/A515FXXU5GVK6:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	PRIVATE_BUILD_DESC="a51nsxx-user 13 TP1A.220624.014 A515FXXU5GVK6 release-keys"
+	BuildDesc=$(call normalize-path-list, "a51nsxx-user 13 TP1A.220624.014 A515FXXU5GVK6 release-keys")
 
 ## Device configuration
 PRODUCT_NAME := lineage_a51
