@@ -3,4 +3,8 @@
     <dimen name="status_bar_padding_start">10px</dimen>
     <dimen name="status_bar_padding_end">10px</dimen>
     <dimen name="status_bar_padding_top">15px</dimen>
+    <!-- Color of the FOD view -->
+    <color name="config_udfpsColor">#00ff50</color>
+    <!-- The radius of the enrollment progress bar, in dp -->
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">70</integer>
 </resources>
