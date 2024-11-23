@@ -30,6 +30,10 @@ TARGET_SCREEN_WIDTH := 1080
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# OTA
+PRODUCT_SYSTEM_PROPERTIES += \
+    lineage.updater.uri=https://raw.githubusercontent.com/Exynos9611Development/OTA/lineage/a51/ota.json
+
 # Init.rc
 PRODUCT_PACKAGES += \
     fingerprint_common.rc
