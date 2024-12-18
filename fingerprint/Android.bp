@@ -25,8 +25,12 @@ cc_binary {
         "android.hardware.biometrics.common-V4-ndk",
         "android.hardware.biometrics.common.util",
     ],
-    static_libs: ["libandroid.hardware.biometrics.fingerprint.SamsungProps.a51"],
+    static_libs: [
+        "libandroid.hardware.biometrics.fingerprint.SamsungProps.a51",
+        "libudfpshandler.a51",
+    ],
     vendor: true,
+    header_libs: ["samsungfingerprint_headers.a51"],
 }
 
 sysprop_library {

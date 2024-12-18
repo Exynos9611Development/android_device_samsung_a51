@@ -1,0 +1,23 @@
+//
+// Copyright (C) 2025 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_static {
+    name: "libudfpshandler.a51",
+    srcs: ["UdfpsHandler.cpp"],
+    shared_libs: [
+        "libbase",
+    ],
+    vendor: true,
+    header_libs: ["samsungfingerprint_headers.a51"],
+}
+
+cc_library_headers {
+    name: "samsungfingerprint_headers.a51",
+    export_include_dirs: ["include"],
+    vendor: true,
+    header_libs: ["libhardware_headers"],
+    export_header_lib_headers: ["libhardware_headers"],
+}
