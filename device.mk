@@ -38,6 +38,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_PACKAGES += \
     fingerprint_common.rc
 
+# NFC
+PRODUCT+PACKAGES += \
+    android.hardware.nfc@1.1-service
+
 # Audio configs
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
