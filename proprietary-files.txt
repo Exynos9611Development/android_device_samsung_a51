@@ -101,9 +101,3 @@ vendor/lib64/nfc_nci_nxp.so
 vendor/lib64/vendor.nxp.nxpnfc@1.0.so
 vendor/lib64/vendor.nxp.nxpnfc@1.1.so
 vendor/firmware/nfc/libpn553_fw.so
-
-# Media
-vendor/etc/mixer_gains.xml
-vendor/etc/mixer_gains_ti.xml
-vendor/etc/mixer_paths.xml
-vendor/etc/mixer_paths_ti.xml
