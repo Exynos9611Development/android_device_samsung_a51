@@ -33,3 +33,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Init.rc
 PRODUCT_PACKAGES += \
     fingerprint_common.rc
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+     android.hardware.biometrics.fingerprint-service.samsung.a51 \
+     sensors.samsung

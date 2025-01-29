@@ -38,5 +38,9 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
 ## Filesystem config
 include device/samsung/universal9611-common/fsconfig_dynamic.mk
 
+# FOD
+TARGET_SURFACEFLINGER_UDFPS_LIB := //$(COMMON_PATH):libudfps_extension.a51
+TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x2000U | 0x400000000LL
+
 ## Prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
