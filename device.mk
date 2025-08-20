@@ -36,7 +36,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service-samsung.a51 \
+    android.hardware.biometrics.fingerprint-service.a51 \
     sensors.samsung
 
 PRODUCT_COPY_FILES += \
