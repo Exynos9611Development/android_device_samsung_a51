@@ -39,6 +39,13 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
 $(call soong_config_set,samsungCameraVars,extra_ids,4,20,23,50,52,54)
 
 ## Vintf
+ODM_MANIFEST_SKUS := hce hceese hcesim hcesimese disabled
+ODM_MANIFEST_NFC_FILE := $(DEVICE_PATH)/configs/nfc/odm_nfc_manifest.xml
+ODM_MANIFEST_HCE_FILES := $(ODM_MANIFEST_NFC_FILE)
+ODM_MANIFEST_HCEESE_FILES := $(ODM_MANIFEST_NFC_FILE)
+ODM_MANIFEST_HCESIM_FILES := $(ODM_MANIFEST_NFC_FILE)
+ODM_MANIFEST_HCESIMESE_FILES := $(ODM_MANIFEST_NFC_FILE)
+ODM_MANIFEST_DISABLED_FILES := $(DEVICE_PATH)/configs/nfc/odm_nfc_manifest_disabled.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/configs/vintf/device_framework_matrix.xml
 

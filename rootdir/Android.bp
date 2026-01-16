@@ -5,3 +5,10 @@ prebuilt_etc {
    sub_dir: "init",
    vendor: true,
 }
+
+prebuilt_etc {
+   name: "init.nfc_sku.rc",
+   src: "etc/init.nfc_sku.rc",
+   sub_dir: "init",
+   vendor: true,
+}
