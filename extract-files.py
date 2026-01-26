@@ -25,10 +25,6 @@ namespace_imports = [
     'vendor/samsung/universal9611-common',
 ]
 
-lib_fixups: lib_fixups_user_type = {
-    'nfc_nci_nxp': lib_fixup_remove,
-}  # fmt: skip
-
 blob_fixups: blob_fixups_user_type = {
     (
         'vendor/lib/sensors.inputvirtual.so',
@@ -49,7 +45,6 @@ module = ExtractUtilsModule(
     'samsung',
     namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,
-    lib_fixups=lib_fixups,
 )
 
 if __name__ == '__main__':
